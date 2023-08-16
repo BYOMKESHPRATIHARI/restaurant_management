@@ -15,3 +15,36 @@ Have Java JDK already installed and an IDE like Eclipse
 Install MySQL on the system.
 Download the MySQL connector from here.
 In Eclipse, under your project expand external libraries and right-click, and select Open restaurantmanagement Settings. Select the libraries tab and click on the + button. Browse your jar file downloaded from the above step and click on it. This will add a dependency to your project. The steps will differ if you are using a different IDE.
+
+
+# MySql Setup for Restaurant Management System Project in Java
+
+1. Create a database
+-- Creating database
+create database restaurant;
+2. Select the database
+-- Selecting the database
+use restaurant;
+3. Create a food table
+-- Creating food table
+create table food (
+  id int primary key,
+  food_name varchar(25) not null,
+  price int not null,
+  quantity int 
+);
+4. Create an admin table
+-- Create admin table
+create table admin (
+login_id varchar(25),
+password varchar(25)
+);
+5. Insert some values in the admin table
+-- Inserting value in admin table
+insert into admin values
+("admin","admin")
+
+
+
+
+
